@@ -1,0 +1,130 @@
+body{
+    font-family : "Plus Jakarta Sans" , sans-serif !important;
+    display : flex;
+    flex-direction : column;
+    min-height : 100vh;
+}
+
+.container{
+    flex : 1;
+}
+
+.navbar{
+    height : 5rem;
+    background-color : white;
+}
+
+
+.fa-hotel{
+    color : #14B8A6;
+    font-size : 2rem;
+}
+
+.nav-link {
+    color : #222222 !important
+}
+
+.f-info-links a{
+    text-decoration : none;
+    color : #222222;
+}
+
+.f-info-socials , .f-info-brand , .f-info-links{
+    width : 100%;
+    display :  flex;
+    align-items : center;
+    justify-content : center;
+    text-align : center;
+}
+
+.f-info-socials i{
+    font-size : 1.2rem;
+    margin  : 1rem;
+
+}
+
+.f-info-links a:hover{
+    text-decoration : underline;
+}
+
+.f-info{
+    height : 8rem;
+    display : flex;
+    background-color : #ebebeb;
+    flex-wrap : wrap;
+    justify-content : center;
+    align-items : space-evenly;
+    text-align : center;
+}
+
+.listing-card{
+    border : none !important;
+    margin-bottom : 2rem; 
+}
+
+@media (max-width:767px){
+    .listing-card{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+}
+
+.card-img-top{
+    border-radius : 1rem !important;
+    width : 100% !important;
+    object-fit : cover !important;
+}
+
+.card-body{
+    padding : 0 !important;
+}
+
+.card-text p{
+    font-weight :  400 !important;
+}
+
+.listing-link{
+    text-decoration : none;
+    color : black;
+}
+
+.card-img-overlay{
+    opacity : 0;
+}
+
+.card-img-overlay:hover{
+    opacity : 0.2;
+    background-color: white;
+}
+
+.add-btn{
+    background-color : #14B8A6 !important;
+    border : none !important;
+}
+
+
+.edit-btn{
+    background-color : #14B8A6 !important;
+    border : none !important;
+}
+
+
+.show-img{
+    height : 30vh;
+}
+
+.btns{
+    display : flex;
+
+}
+
+.show-editbtn{
+    background-color : #14B8A6 !important;
+    border : none  !important;
+}
+
+.show-delbtn{
+    background-color : red  !important;
+    border : none !important;
+}
