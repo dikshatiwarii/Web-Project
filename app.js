@@ -85,6 +85,10 @@ const sessionOptions = {
     }
 };
 
+app.get("/" , (req , res) => {
+    res.render("listings/home.ejs");
+});
+
 
 app.use(session(sessionOptions));
 app.use(flash());
@@ -96,12 +100,6 @@ passport.use(new localStrategy(User.authenticate()));
 
 passport.serializeUser(User.serializeUser());
 passport.deserializeUser(User.deserializeUser());
-
-app.get("/" , (req , res) => {
-    res.render("listings/home.ejs");
-});
-
-
 
 
 app.use((req , res , next) => {
