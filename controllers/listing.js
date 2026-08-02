@@ -38,7 +38,7 @@ module.exports.createListing = async(req , res , next) =>{
         newListing.image = {url, filename};
         await newListing.save();
         req.flash("success" , "New Listing created");
-        res.redirect("/listings");
+        res.redirect("/listings/explore");
 }
 
 module.exports.renderEditForm = async(req ,res) => {
@@ -69,5 +69,5 @@ module.exports.destroyListing = async(req , res) =>{
     let { id } = req.params;
     let deletedListing = await Listing.findByIdAndDelete(id);
     req.flash("success" , "Listing deleted");
-    res.redirect("/listings");
+    res.redirect("/listings/explore");
 }
