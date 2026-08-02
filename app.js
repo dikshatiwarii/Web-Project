@@ -2,6 +2,11 @@ if (process.env.NODE_ENV !== "production") {
     require("dotenv").config();
 }
 
+// Add this at the very top of app.js / server.js
+if (!globalThis.crypto) {
+  globalThis.crypto = require('node:crypto');
+}
+
 console.log(process.env.CLOUD_NAME);
 
 const express = require("express");
@@ -29,6 +34,10 @@ const dbUrl = process.env.ATLASDB_URL;
 
 const dns = require("node:dns/promises");
 dns.setServers(["1.1.1.1", "8.8.8.8"]);
+
+const crypto = require("crypto");
+
+const id = crypto.randomUUID();
 
 async function main() {
     try {
