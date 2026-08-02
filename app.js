@@ -3,6 +3,7 @@ if (process.env.NODE_ENV !== "production") {
 }
 
 // Add this at the very top of app.js / server.js
+const
 if (!globalThis.crypto) {
   globalThis.crypto = require('node:crypto');
 }
@@ -97,7 +98,7 @@ passport.serializeUser(User.serializeUser());
 passport.deserializeUser(User.deserializeUser());
 
 app.get("/" , (req , res) => {
-    res.redirect("listings/home.ejs");
+    res.render("listings/home.ejs");
 });
 
 
