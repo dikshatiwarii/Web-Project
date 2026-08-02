@@ -96,9 +96,9 @@ passport.use(new localStrategy(User.authenticate()));
 passport.serializeUser(User.serializeUser());
 passport.deserializeUser(User.deserializeUser());
 
-// app.get("/" , (req , res) => {
-//     res.send("HI!! I am root");
-// });
+app.get("/" , (req , res) => {
+    res.redirect("listings/home.ejs");
+});
 
 
 
