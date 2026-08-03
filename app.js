@@ -1,11 +1,19 @@
+// if (process.env.NODE_ENV !== "production") {
+//     require("dotenv").config();
+// }
+
+// if (!globalThis.crypto) {
+//   globalThis.crypto = require('node:crypto');
+// }
+
+// console.log(process.env.CLOUD_NAME);
+
 if (process.env.NODE_ENV !== "production") {
     require("dotenv").config();
 }
 
-// Add this at the very top of app.js / server.js
-const
 if (!globalThis.crypto) {
-  globalThis.crypto = require('node:crypto');
+    globalThis.crypto = require('node:crypto');
 }
 
 console.log(process.env.CLOUD_NAME);
