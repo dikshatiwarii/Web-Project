@@ -108,9 +108,9 @@ app.use((req , res , next) => {
 });
 
 
+app.use("/" , userRouter);
 app.use("/listings" , listingRouter);
 app.use("/listings/:id/reviews" , reviewRouter);
-app.use("/" , userRouter);
 
 app.get("/coming-soon", (req, res) => {
     res.render("listings/comingSoon.ejs");

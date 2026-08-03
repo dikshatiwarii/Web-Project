@@ -24,10 +24,6 @@ router
 .get(wrapAsync(listingController.home))
 
 
-
-
-
-
 //new 
 router.get("/new" , 
     isLoggedIn ,
