@@ -84,7 +84,7 @@ const sessionOptions = {
 };
 
 app.get("/" , (req , res) => {
-    res.render("/listings");
+    res.render("listings/home.ejs");
 });
 
 
