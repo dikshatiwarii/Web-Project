@@ -129,9 +129,13 @@ body{
     border : none !important;
 }
 
+
 @media (max-width: 576px) {
     .secondFilter a{
         display : none;
-        font-size: 4rem;
     }
+
+    .filter a{
+    font-size: small;
+}
 }
