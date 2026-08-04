@@ -130,8 +130,8 @@ body{
 }
 
 @media (max-width: 576px) {
-    .secondFilter{
+    .secondFilter a{
         display : none;
-        font-size: smaller;
+        font-size: 4rem;
     }
 }
