@@ -254,8 +254,9 @@
           animation-fill-mode: forwards;
 }
 
-@media (min-width:768px){
-    .review-card starability-result{
-      font-size: 0.4rem !important;
+@media (max-width:576px){
+    .starability-result{
+      font-size:  0.75rem !important;
+      min-height: 1.25rem;
     }
 }
