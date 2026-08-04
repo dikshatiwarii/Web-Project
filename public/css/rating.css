@@ -255,8 +255,9 @@
 }
 
 @media (max-width:576px){
-    .starability-result{
+  p.starability-result,
+    .starability-result[data-rating]{
       font-size:  0.75rem !important;
-      min-height: 1.25rem;
+      min-height: 1.25rem !important;
     }
 }
