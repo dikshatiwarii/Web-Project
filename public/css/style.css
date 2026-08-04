@@ -132,5 +132,6 @@ body{
 @media (max-width: 576px) {
     .secondFilter{
         display : none;
+        font-size: small;
     }
 }
