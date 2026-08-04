@@ -83,7 +83,7 @@
             <div class="card col-10 col-md-5 ms-3 mb-3">
                 <div class="card-body"><br>
                     <h5 class="card-title"><%= review.author.username %></h5>
-                    <p class="starability-result card-text mobile-star-rating" data-rating="3"><%= review.rating%>stars</p>
+                    <p class="starability-result card-text mobile-star-rating" data-rating=""><%= review.rating%>stars</p>
                     <p><%= review.comment %></p>
 
                     <% if(currUser && review.author && currUser._id.equals(review.author._id)) { %>
