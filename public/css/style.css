@@ -131,11 +131,15 @@ body{
 
 
 @media (max-width: 576px) {
-    .secondFilter a{
+    .secondFilter{
         display : none;
     }
 
-    .filter a{
+    .filter{
     font-size: small;
+    
+    #filters{
+        display: flex;
+    }
 }
 }
